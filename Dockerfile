@@ -2,9 +2,7 @@ FROM centos:7.2.1511
 
 MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>
 
-ENV LUA_MAJOR_VERSION 5.0
-ENV LUA_MINOR_VERSION 3
-ENV LUA_VERSION ${LUA_MAJOR_VERSION}.${LUA_MINOR_VERSION}
+ENV LUA_VERSION 5.2.0
 
 RUN yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all
 
